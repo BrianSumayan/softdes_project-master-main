@@ -37,7 +37,7 @@ function App() {
     setCurrentFault("");
     try {
       const response = await axios.get(
-        "http://192.168.1.52:5000/api/start-scan"
+        "https://softdes-project-master-main-5.onrender.com/api/start-scan"
       );
       if (response.data.message === "Anomaly Detected!") {
         setDetectionMessage(response.data.message);
