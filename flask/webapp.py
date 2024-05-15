@@ -32,4 +32,4 @@ def check_anomaly():
         return jsonify({"message": "No Anomaly Detected, Engine is good!"})
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='192.168.1.52', port=5000)

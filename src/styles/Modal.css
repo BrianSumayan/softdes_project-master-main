@@ -4,7 +4,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.75); /* Slightly darker to enhance focus on modal */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.75
+  ); /* Slightly darker to enhance focus on modal */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +23,7 @@
   border-radius: 8px; /* Rounded corners for a softer look */
   width: 90%; /* Responsive width */
   max-width: 600px; /* Maximum width */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
   text-align: center; /* Center-align the text */
 }
 
