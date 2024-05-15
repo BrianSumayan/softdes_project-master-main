@@ -21,6 +21,10 @@ def determine_fault():
     faults[selected_fault] = "warning"
     return faults
 
+@app.route('/')
+def home():
+    return jsonify({"message": "Welcome to the Engine Fault Detection API!"})
+
 @app.route('/api/start-scan', methods=['GET'])
 def check_anomaly():
     time.sleep(np.random.uniform(1, 2))  # Introduce a small delay
@@ -32,4 +36,4 @@ def check_anomaly():
         return jsonify({"message": "No Anomaly Detected, Engine is good!"})
 
 if __name__ == '__main__':
-    app.run(debug=True, host='192.168.1.52', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=10000)
