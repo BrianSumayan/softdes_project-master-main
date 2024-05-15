@@ -72,9 +72,9 @@ soundfile==0.12.1
 soxr==0.3.7
 streamlit==1.34.0
 tenacity==8.3.0
-tensorboard==2.13.1  # Updated for compatibility
+tensorboard==2.16.2
 tensorboard-data-server==0.7.2
-tensorflow==2.13.1  # Updated for compatibility
+tensorflow==2.13.1
 termcolor==2.4.0
 threadpoolctl==3.5.0
 toml==0.10.2
