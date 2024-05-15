@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, redirect, url_for
 from flask_cors import CORS
 import numpy as np
 import time
@@ -23,7 +23,7 @@ def determine_fault():
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Welcome to the Engine Fault Detection API!"})
+    return redirect(url_for('check_anomaly'))
 
 @app.route('/api/start-scan', methods=['GET'])
 def check_anomaly():
